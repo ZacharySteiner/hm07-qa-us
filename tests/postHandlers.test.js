@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-undef
+
 const config = require('../config');
 
 const requestBody = {
@@ -7,7 +7,6 @@ const requestBody = {
 }
 
 test('Request status code should be 201', async () => {
-	// let actualResponseCode;
 	try {
 		response = await fetch(`${config.API_URL}/api/v1/kits`, {
 			method: "POST",
